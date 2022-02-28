@@ -1,0 +1,34 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react"
+  ],
+  "rules": {
+    "indent": [
+      true,
+      "spaces"
+    ],
+    "jsx-alignment": [
+      false
+    ],
+    "jsx-no-multiline-js": false,
+    "member-access": false,
+    "member-ordering": [
+      false
+    ],
+    "no-console": [
+      false
+    ],
+    "no-implicit-dependencies": [true, ["src", "@ant-design/plots"]],
+    "no-shadowed-variable": false,
+    "no-submodule-imports": false,
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": true,
+    "quotemark": [
+      true,
+      "single",
+      "jsx-double"
+    ]
+  }
+}

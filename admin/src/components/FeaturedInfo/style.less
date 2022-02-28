@@ -1,0 +1,52 @@
+.featured {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  .featured__item {
+    flex: 1;
+    margin: 0px 20px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0, 0, 0, 0.75);
+
+    .featured__item__title {
+      font-size: 20px;
+    }
+
+    .featured__item__money {
+      margin: 10px 0px;
+      display: flex;
+      align-items: center;
+
+      .featured__item__money__total {
+        font-size: 30px;
+        font-weight: 600;
+      }
+
+      .featured__item__money__rate {
+        display: flex;
+        align-items: center;
+        margin-left: 20px;
+
+        .featured__item__money__rate__icon {
+          font-size: 14px;
+          margin-left: 5px;
+          color: green;
+
+          &._negative{
+            color: red;
+          }
+        }
+      }
+    }
+
+    .featured__item__sub {
+      font-size: 15px;
+      color: gray;
+    }
+  }
+}

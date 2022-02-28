@@ -1,0 +1,45 @@
+
+.signin_title {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.login__container__form {
+  display: flex;
+  flex-direction: column;
+
+  .login__container__form__input {
+    flex: 1;
+    min-width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+
+  .login-form-button {
+    width: 40%;
+    border: none;
+    background-color: teal;
+    color: white;
+
+    &:hover {
+      background-color: teal;
+    }
+
+    &:disabled {
+      color: green;
+      cursor: not-allowed;
+    }
+  }
+
+  .login__container__form__link {
+    color: black;
+    margin: 5px 0px;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .login__container__form__error {
+    color: red;
+  }
+}

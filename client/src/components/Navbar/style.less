@@ -1,0 +1,85 @@
+.navbar {
+  height: 60px;
+
+  .navbar__container {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .navbar__container__left {
+      flex: 1;
+      display: flex;
+      align-items: center;
+
+      .navbar__container__left__language {
+        font-size: 14px;
+        cursor: pointer;
+
+        @media only screen and (max-width: 380px) {
+          display: none;
+        }
+      }
+
+      .navbar__container__left__search-container {
+        border: 0.5px solid lightgray;
+        display: flex;
+        align-items: center;
+        margin-left: 25px;
+        padding: 5px;
+
+        input {
+          border: none;
+
+          @media only screen and (max-width: 380px) {
+            width: 50px;
+          }
+        }
+      }
+    }
+
+    .navbar__container__center {
+      flex: 1;
+      text-align: center;
+
+      .logo {
+        font-weight: bold;
+
+        @media only screen and (max-width: 380px) {
+          font-size: 24px;
+        }
+      }
+    }
+
+    .navbar__container__right {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      .menu-item {
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 25px;
+
+        @media only screen and (max-width: 380px) {
+          font-size: 12px;
+          margin-left: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 380px) {
+        flex: 2;
+        justify-content: center;
+      }
+    }
+
+    @media only screen and (max-width: 380px) {
+      padding: 10px 0px;
+    }
+  }
+
+  @media only screen and (max-width: 380px) {
+    height: 50px;
+  }
+}

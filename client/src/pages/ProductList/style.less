@@ -1,0 +1,25 @@
+.product-list {
+  h1 {
+    margin: 20px;
+  }
+
+  .product-list__filter-section {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+
+    .filter {
+      display: flex;
+
+      .ant-select {
+        padding-left: 12px;
+      }
+
+      @media only screen and (max-width: 380px) {
+        width: 0px 20px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

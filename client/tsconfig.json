@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "react",
+    "lib": ["es6", "dom"],
+    "module": "es6",
+    "moduleResolution": "node",
+    "noEmitOnError": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": true,
+    "outDir": "./dist/",
+    "removeComments": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "target": "es6",
+  },
+  "include": ["./src/**/*"],
+  "types": [
+    "./src/types",
+    "jest"
+  ],
+  "exclude": [
+    "acceptance-tests",
+    "build",
+    "jest",
+    "node_modules",
+    "scripts",
+    "src/setupTests.ts",
+    "webpack",
+  ],
+  "paths": {
+    "src/*": ["src/*"]
+  }
+}
