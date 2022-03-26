@@ -81,7 +81,7 @@ const getMontlyIncome = async (req: Request, res: Response) => {
       {
         $project: {
           month: { $month: '$createdAt' },
-          sales: '$amount',
+          sales: '$totalPrice',
         },
       },
       {

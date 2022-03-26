@@ -1,6 +1,6 @@
 import { Button, Form, Input } from 'antd';
 import qs from 'query-string';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useHistory, useLocation } from 'react-router-dom';
 
 import { auth } from '../../store/apiActions/login';
@@ -20,9 +20,10 @@ const Login = () => {
   const history = useHistory();
   const location = useLocation();
   const isAuthorized = useSelector((state) => state.user?.currentUser?.email);
+  const [isLoading, setLoading] = useState(false);
 
   useEffect(() => {
-    if (isAuthorized) {
+    if (!isLoading && isAuthorized) {
       const params = qs.parse(location.search) as { redirect: string };
 
       if (params.redirect) {
@@ -35,7 +36,9 @@ const Login = () => {
 
   const onFinish = async (values: ILoginForm) => {
     const { email, password } = values;
+    setLoading(true);
     await auth.login(dispatch, { email, password });
+    setLoading(false);
   };
 
   return (

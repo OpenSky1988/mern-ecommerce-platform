@@ -8,6 +8,7 @@ import {
   TwitterOutlined,
 } from '@ant-design/icons';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './style.less';
 
@@ -28,17 +29,36 @@ const SocialLinks: React.FC<{}> = () => (
   </div>
 );
 
-const FooterCategories: React.FC<{}> = () => (
+const FooterCategories: React.FC = () => (
   <ul>
-    <li>Домой</li>
-    <li>Корзина</li>
-    <li>Мужское</li>
-    <li>Женское</li>
-    <li>Аксессуары</li>
+    <li>
+      <Link key="home" to={'/'}>Домой</Link>
+    </li>
+    <li>
+      <Link key="cart" to={'/cart'}>Корзина</Link>
+    </li>
+    <li>
+      <Link key="underwear" to={`/products?category=underwear`}>Нижнее бельё</Link>
+    </li>
+    <li>
+      <Link key="shoes" to={`/products?category=shoes`}>Обувь</Link>
+    </li>
+    <li>
+      <Link key="jeans" to={`/products?category=jeans`}>Деним</Link>
+    </li>
+    <li>
+      <Link key="accesoires" to={`/products?category=accesoires`}>Аксессуары</Link>
+    </li>
+    <li>
+      <Link key="coat" to={`/products?category=coat`}>Пальто</Link>
+    </li>
+    <li>
+      <Link key="jackets" to={`/products?category=jackets`}>Куртки</Link>
+    </li>
     <li>Мой Кабинет</li>
-    <li>Мои Заказы</li>
-    <li>Мои Желания</li>
-    <li>Wishlist</li>
+    <li>
+      <Link key="orders" to={'/orders'}>Мои Заказы</Link>
+    </li>
     <li>Условия</li>
   </ul>
 );
@@ -46,10 +66,10 @@ const FooterCategories: React.FC<{}> = () => (
 const Contacts: React.FC<{}> = () => (
   <>
     <div className="footer__right__contact-item">
-      <AimOutlined style={{ marginRight: '10px' }}/> 143350 г. Москва, ул. Ленина, д. 1
+      <AimOutlined style={{ marginRight: '10px' }}/> 660049 г. Красноярск, ул. Карла Маркса, д. 10
     </div>
     <div className="footer__right__contact-item">
-      <PhoneOutlined style={{ marginRight: '10px' }}/> +7 987 6543
+      <PhoneOutlined style={{ marginRight: '10px' }}/> +7 987 654 3210
     </div>
     <div className="footer__right__contact-item">
       <MailOutlined style={{ marginRight: '10px' }} /> contact@lamarkt.ru

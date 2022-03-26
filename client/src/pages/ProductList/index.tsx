@@ -3,7 +3,7 @@ import qs from 'qs';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 
-import NewsLetter from '../../components/Newsletter';
+import NewsLetter from '../../components/NewsLetter';
 import PageHeader from '../../components/PageHeader';
 import Products from '../../components/Products';
 

@@ -1,7 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import eventEmitter from 'src/utils/eventEmitter';
 
-export const path = (path: string) => `${process.env.API_PATH || ''}${path}`;
+export const path = (path: string) => `${process.env.API_PATH}${path}`;
 
 export const getToken = () => {
   const user = JSON.parse(localStorage.getItem('persist:root'))?.user;

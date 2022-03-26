@@ -42,7 +42,7 @@ const Product = () => {
 
   // ToDo: Add manual selection for color, quantity and size
   const handleClick = () => {
-    dispatch(addProduct({ ...product, color: product.color[0], quantity: 1, size: product.size[0] }));
+    dispatch(addProduct({ ...product, productId: product._id, color: product.color[0], quantity: 1, size: product.size[0] }));
   };
 
   return (

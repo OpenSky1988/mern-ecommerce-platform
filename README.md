@@ -21,16 +21,16 @@ Config location: `/usr/local/etc/mongod.conf`
 Windows: `sudo mongod --config /usr/local/etc/mongod.conf`
 Mac OS : `sudo mongod --config <mongodb install directory>/bin/mongod.cfg`
 * Run server:
-`yarn start`
+`yarn watch-node`
 
 ## Store
 * Go to directory & intall dependencies:
 `cd ./client && yarn install`
 * Run client:
-`yarn start`
+`yarn start:local`
 
 ## Admin
 * Go to directory & intall dependencies:
 `cd ./admin && yarn install`
 * Run client:
-`yarn start`
+`yarn start:local`

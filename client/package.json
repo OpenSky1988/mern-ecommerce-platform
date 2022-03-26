@@ -1,9 +1,15 @@
 {
   "name": "@ecommerce/client",
+  "engines": {
+    "node": "12.14.1"
+  },
   "scripts": {
     "build": "cross-env NODE_ENV=production API_ENV=local webpack",
-    "start": "cross-env NODE_ENV=development API_ENV=local webpack serve",
+    "deploy": "git add -A && git commit -m Heroku && git push heroku master",
+    "postinstall": "cross-env NODE_ENV=production API_ENV=local webpack",
+    "start": "node server.js",
     "start:env": "webpack-dev-server",
+    "start:local": "cross-env NODE_ENV=development API_ENV=local webpack serve",
     "test": "jest",
     "tslint": "tslint 'src/**/*.ts' 'src/**/*.tsx' --format stylish"
   },
@@ -27,6 +33,7 @@
     "core-js": "^3.15.0",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
+    "express": "^4.17.3",
     "history": "^4.10.1",
     "i18next": "^20.3.2",
     "i18next-browser-languagedetector": "^6.1.2",

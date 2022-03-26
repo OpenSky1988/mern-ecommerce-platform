@@ -62,7 +62,10 @@ const FeaturedInfo: React.FC = () => {
       <FeaturedItem
         description="За последний месяц"
         title="Прибыль"
-        totalIncome={income[0]?.total - income[1]?.total}
+        totalIncome={income[1]?.total
+          ? income[0]?.total - income[1]?.total
+          : income[0]?.total
+        }
         perc={perc}
       />
       <FeaturedItem

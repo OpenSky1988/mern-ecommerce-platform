@@ -4,6 +4,7 @@ const OrderSchema = new Schema(
   {
     address: { type: Object, required: true },
     amount: { type: Number, required: true },
+    totalPrice: { type: Number, required: true },
     products: [
       {
         quantity: {

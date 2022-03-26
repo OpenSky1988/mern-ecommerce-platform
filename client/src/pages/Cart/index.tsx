@@ -22,7 +22,7 @@ const Product: React.FC<{ product: IProduct }> = ({ product }) => {
   return (
     <div className="info__product" key={`product_${product._id}`}>
       <div className="info__product__detail">
-        <img className="info__product__detail__image" src={`${process.env.API_PATH}users/image/${product.img[0]}`} />
+        <img className="info__product__detail__image" src={`${process.env.API_PATH}users/image/${product.img?.[0]}`} />
         <div className="info__product__detail__details">
           <span>
             <b>Продукт:</b> {product.title}
@@ -32,7 +32,7 @@ const Product: React.FC<{ product: IProduct }> = ({ product }) => {
           </span>
           <div
             className="info__product__detail__details__product"
-            style={{ backgroundColor: product.color[0] }}
+            style={{ backgroundColor: product.color?.[0] }}
           />
           <span>
             <b>Размер:</b> {product.size}
@@ -78,6 +78,7 @@ const Cart = () => {
             location: address,
             user: user.currentUser,
           },
+          totalPrice: cart.total,
           amount: cart.quantity,
           products: Object.values(cart.products),
           status: 'pending',

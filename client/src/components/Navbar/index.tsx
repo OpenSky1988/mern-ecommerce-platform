@@ -17,7 +17,7 @@ const { Item } = Menu;
 
 import './style.less';
 
-const Navbar: React.FC<{}> = () => {
+const Navbar: React.FC = () => {
   const history = useHistory();
   const location = useLocation();
   const queryParams = qs.parse(location.search, { ignoreQueryPrefix: true });

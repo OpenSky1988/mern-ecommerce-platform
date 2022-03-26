@@ -165,9 +165,9 @@ config.plugins = [
 	// 		},
 	// 	],
 	// }),
-	new webpack.EnvironmentPlugin({
-		'API_PATH': serverContext,
-	}),
+	// new webpack.EnvironmentPlugin({
+	// 	'API_PATH': serverContext,
+	// }),
   new webpack.ProvidePlugin({
     process: 'process/browser',
   }),

@@ -26,8 +26,8 @@ const LatestTransactions: React.FC<ILatestTransactions> = ({ orders }) => {
       render: (value: Date) => format(value),
     },
     {
-      dataIndex: 'amount',
-      key: 'amount',
+      dataIndex: 'totalPrice',
+      key: 'totalPrice',
       title: 'Сумма',
     },
     {

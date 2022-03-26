@@ -5,6 +5,7 @@ export const sliderItems = [
     title: 'ЛЕТНЯЯ РАСПРОДАЖА',
     desc: 'НЕ ЭКОНОМЬ НА СТИЛЕ! ПОЛУЧИ 30% СКИДКУ НА НОВЫЕ КОЛЛЕКЦИИ.',
     bg: 'f5fafd',
+    cat: '',
   },
   {
     id: 2,
@@ -12,6 +13,7 @@ export const sliderItems = [
     title: 'ОСЕННЯЯ КОЛЛЕКЦИЯ',
     desc: 'НЕ ЭКОНОМЬ НА СТИЛЕ! ПОЛУЧИ 30% СКИДКУ НА НОВЫЕ КОЛЛЕКЦИИ.',
     bg: 'fcf1ed',
+    cat: '',
   },
   {
     id: 3,
@@ -19,6 +21,7 @@ export const sliderItems = [
     title: 'НИЖНЕЕ БЕЛЬË',
     desc: 'НЕ ЭКОНОМЬ НА СТИЛЕ! ПОЛУЧИ 30% СКИДКУ НА НОВЫЕ КОЛЛЕКЦИИ.',
     bg: 'fbf0f4',
+    cat: 'underwear',
   },
 ];
 
@@ -26,19 +29,19 @@ export const categories = [
   {
     id: 1,
     img: 'https://images.pexels.com/photos/5886041/pexels-photo-5886041.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-    title: 'ТОПЫ',
-    cat: 'underwear',
+    title: 'ЛËГКИЕ КУРТКИ',
+    cat: 'jackets',
   },
   {
     id: 2,
     img: 'https://images.pexels.com/photos/2983464/pexels-photo-2983464.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
     title: 'НИЖНЕЕ БЕЛЬË',
-    cat: 'coat',
+    cat: 'underwear',
   },
   {
     id: 3,
     img: 'https://images.pexels.com/photos/5480696/pexels-photo-5480696.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-    title: 'ЛËГКИЕ КУРТКИ',
-    cat: 'jeans',
+    title: 'ПАЛЬТО',
+    cat: 'coat',
   },
 ];
